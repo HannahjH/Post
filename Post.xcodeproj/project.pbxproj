@@ -13,6 +13,7 @@
 		AF30F3F02208E79800CAE5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF30F3EE2208E79800CAE5DB /* LaunchScreen.storyboard */; };
 		AF30F3F82208E7E100CAE5DB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF30F3F72208E7E100CAE5DB /* Post.swift */; };
 		AF30F3FD2208E99D00CAE5DB /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF30F3FC2208E99D00CAE5DB /* PostController.swift */; };
+		AF30F40822091A8700CAE5DB /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF30F40722091A8700CAE5DB /* PostListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AF30F3F12208E79800CAE5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF30F3F72208E7E100CAE5DB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		AF30F3FC2208E99D00CAE5DB /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		AF30F40722091A8700CAE5DB /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 			children = (
 				AF30F3E52208E79700CAE5DB /* AppDelegate.swift */,
 				AF30F3F92208E96D00CAE5DB /* Model */,
-				AF30F3FE2208E9A300CAE5DB /* Model Controllers */,
+				AF30F4022209092100CAE5DB /* Controllers */,
 				AF30F3FA2208E97400CAE5DB /* Stroyboards */,
 				AF30F3FB2208E98300CAE5DB /* Resources */,
 			);
@@ -97,6 +99,23 @@
 				AF30F3FC2208E99D00CAE5DB /* PostController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		AF30F4012209091800CAE5DB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF30F40722091A8700CAE5DB /* PostListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AF30F4022209092100CAE5DB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF30F3FE2208E9A300CAE5DB /* Model Controllers */,
+				AF30F4012209091800CAE5DB /* View Controllers */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +191,7 @@
 			files = (
 				AF30F3E62208E79700CAE5DB /* AppDelegate.swift in Sources */,
 				AF30F3F82208E7E100CAE5DB /* Post.swift in Sources */,
+				AF30F40822091A8700CAE5DB /* PostListTableViewController.swift in Sources */,
 				AF30F3FD2208E99D00CAE5DB /* PostController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Post/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Post/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Post/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Post/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
